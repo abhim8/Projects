@@ -1,0 +1,42 @@
+{
+  "name": "UrlReader",
+  "version": "1.0.0",
+  "description": "First Electron Project which uses all important topics",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "watch": "nodemon --exec electron .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "electron-builder -w",
+    "win-cert": "electron-builder create-self-signed-cert -p abhilashmovva"
+  },
+  "repository": "https://github.com/abhim8/Projects/tree/main/ElectronProjects/URLReader",
+  "homepage": "https://github.com/abhim8/Projects/tree/main/ElectronProjects/URLReader",
+  "keywords": [
+    "Electron"
+  ],
+  "author": "Abhilash",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^13.1.0",
+    "nodemon": "^2.0.7"
+  },
+  "dependencies": {
+    "electron-window-state": "^5.0.3"
+  },
+  "build": {
+    "appId": "com.abhilashM.urlreader",
+    "copyright": "Copyright Abhilash Movva",
+    "mac": {
+      "category": "public.app-category.utilities",
+      "target": "dmg"
+    },
+    "win":{
+      "verifyUpdateCodeSignature": false,
+      "publisherName": "abhilashmovva"
+    },
+    "linux": {
+      "category": "Utility"
+    }
+  }
+}

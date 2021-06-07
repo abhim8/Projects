@@ -1,0 +1,18 @@
+npm install electron --save
+npm install -g nodemon (or) npm install nodemon
+
+npm init -y
+npm start
+
+
+npm run watch
+npm list --depth=0
+
+electron .
+
+electron --inspect=5858 .
+electron --inspect-brk=5858 .
+edge://inspect (or) chrome://inspect
+localhost:5858
+
+ctrl+i + ctrl+t => "to open integrated terminal"
