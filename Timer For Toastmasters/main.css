@@ -1,0 +1,355 @@
+/* css for welcome message */
+
+.modal {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    position: fixed ; 
+    z-index: 1; 
+    padding-top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    top: 0;
+    width: 100%; height: 100% ; 
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+  background-color: #1abc9c;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+.numberBox {
+    width: 70px !important;
+    text-align: center;
+}
+
+.maxMinBtn {
+    color: white;
+    font-size: 20px;
+    position: relative;
+    left: -10px;
+    top: 10px;
+    text-shadow: 1px 1px 0px black;
+}
+
+.fullScreen {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100%;
+}
+
+.actionBtn {
+    background: #e2e2e2;
+    border: 1px solid #696969;
+    width: 200px;
+    color: white;
+    display: block;
+    margin: auto;
+    font-weight: 500;
+}
+
+.timerDisplay {
+    color: #b5b5b5;
+    font-size: 100px;
+    text-align: center;
+    display: block;
+}
+
+button:disabled:hover, input:disabled:hover {
+    cursor: not-allowed;
+    background: #6c757d;
+    color: white !important;
+}
+
+/* Customize the label (the container) */
+.container {
+    /* display: block; */
+    position: relative;
+    padding-left: 5px;
+    /* margin-bottom: 12px; */
+    cursor: pointer;
+    /* font-size: 22px; */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-left: 14px;
+}
+
+    /* Hide the browser's default checkbox */
+    .container input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+    }
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 3px;
+    left: -14px;
+    height: 14px;
+    width: 14px;
+    background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+    background-color: grey;
+}
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+    left: 5px;
+    top: 2px;
+    width: 5px;
+    height: 9px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+.radio-toolbar {
+    margin: 10px;
+    margin-left: 0px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.radio-toolbar input[type="radio"] {
+    opacity: 0;
+    position: fixed;
+    width: 0;
+}
+
+.inline-title {
+    position: absolute;
+    height: 19px;
+    left: 10px;
+    background: white;
+    padding: 0px 5px;
+    top: -8px;
+    font-size: 12px;
+    color: #ff4f4f;
+    font-weight: bold;
+}
+
+.radio-toolbar input[type="radio"]:checked:disabled + label {
+    background-color: #a0a0a0;
+    border-color: #4c4;
+}
+
+.radio-toolbar input[type="radio"]:disabled + label {
+    background-color: #a0a0a0;
+}
+
+.inline-head-pos {
+    position: relative;
+    top: -10px;
+}
+
+.btn:hover {
+    background: inherit;
+    color: black;
+    border: 1px solid #a0a0a0;
+}
+
+.radio-toolbar label {
+    display: inline-block;
+    background-color: #e2e2e2;
+    padding: 7px 10px;
+    font-size: 14px;
+    border: 2px solid #a0a0a0;
+    border-radius: 4px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.form-control {
+    font-size: 14px !important;
+}
+
+.radio-toolbar label:hover {
+    background-color: #b9b9b9;
+}
+
+.radio-toolbar input[type="radio"]:focus + label {
+    border: 2px solid #b9b9b9;
+}
+
+.radio-toolbar input[type="radio"]:checked + label {
+    background-color: #dfd;
+    border-color: #4c4;
+}
+
+.colorChange {
+    display: block;
+    min-height: 550px;
+}
+
+.g {
+    background: #008000;
+}
+
+.y {
+    background: #FFBF00;
+}
+
+.r {
+    background: #FF0000;
+}
+
+.b {
+    background: grey;
+}
+
+
+
+.gC {
+    color: #19bb19;
+}
+
+.yC {
+    color: #eae100;
+}
+
+.rC {
+    color: #ff4f4f;
+}
+
+.bC {
+    color: grey;
+}
+
+.btn {
+    color: black;
+}
+
+.hide {
+    display: none !important;
+}
+
+.tmFooter {
+    position: fixed;
+    display: block;
+    top: 96%;
+    width: 100%;
+    text-align: center;
+    background: #343a40;
+    color: white;
+    font-size: 14px;
+    padding: 10px;
+    padding-bottom: 10px;
+    /* margin-bottom: 10px; */
+}
+
+.captureSpeak {
+    overflow-y: auto;
+    min-height: 550px;
+    height: 550px;
+}
+
+.headings {
+    font-weight: 500;
+    font-size: 15px;
+}
+
+@media(min-width:992px) {
+    .w30 {
+        width: 30% !important;
+    }
+
+    .w60 {
+        width: 60%;
+    }
+
+    .w70 {
+        width: 70% !important;
+    }
+
+    .w40 {
+        width: 40% !important;
+    }
+}
+
+@media(max-width:991px) {
+    .w30 {
+        width: 100% !important;
+    }
+
+    .w60 {
+        width: 100% !important;
+    }
+
+    .w70 {
+        width: 100% !important;
+    }
+
+    .w40 {
+        width: 100% !important;
+    }
+}
+
+.relative {
+    position: relative;
+}

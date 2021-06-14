@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<!-- <html lang="en" xmlns="http://www.w3.org/1999/xhtml"> -->
+<head>
+    <meta charset="utf-8" />
+    <title>Toastmasters Timer WebApp</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="./main.css"> 
+</head>
+
+<body>
+    <!--welcome Screen-->
+    <div id="myModal" class="modal">
+        <div class="modal-content"> <span class="close">&times;</span> <p> Welcome Toastmasters 🗣️ <br></p><h5> &lt; From Developers🖤 /&gt; </h5> </div>
+    </div>
+
+
+    <!--Main contents From Here-->
+    <nav class="navbar navbar-dark bg-dark"> <a class="navbar-brand" href="#">Timer</a> </nav>
+    <div class="container-fluid" style="font-size:14px !important">
+        <div>
+            <div class="">
+                <div class="alert alert-warning p-1 mb-2"> This App doesn't collect any information. Refreshing the webpage will refresh all the data. 😀</div>
+                    <div class="card p-3 mt-2" style="padding-bottom:0px !important;padding-top:0px !important">
+                        <div class="row p-3">
+                            <div class="float-lg-left d-inline-block w60">
+                                <div class="controlSection">
+                                    <div class="headings">Speech Type</div>
+                                    <div class="radio-toolbar">
+                                        <input type="radio" id="TT" name="Speech" value="Table Topics" data-g="60" data-y="90" data-r="120"> <label for="TT">Table Topics (1-2 mins)</label>
+                                        <input type="radio" id="Evaluator" name="Speech" value="Evaluation" data-g="120" data-y="150" data-r="180"> <label for="Evaluator">Evaluation (2-3) mins)</label>
+                                        <input type="radio" id="Prep" name="Speech" value="Prepared Speech (5-7 mins)" data-g="300" data-y="360" data-r="420"> <label for="Prep">Prepared Speech (5-7 mins)</label> 
+                                        <input type="radio" id="custom" name="Speech" value="Prepared Speech"> <label for="custom">Custom Speech</label>
+                                        
+                                        <p class="hide text-danger" id="TypeError">Choose a Speech Type</p>
+                                        <div id="customSection" class="hide mt-2">
+                                            <div class="d-inline-block"> Green <input type="number" id="cust-g" class="form-control numberBox d-inline-block" /> </div>
+                                            <div class="d-inline-block  ml-lg-5"> Yellow <input type="number" id="cust-y" class="form-control numberBox  d-inline-block" /> </div>
+                                            <div class="d-inline-block  ml-lg-5"> Red <input type="number" id="cust-r" class="form-control numberBox  d-inline-block" /> </div>
+                                            <div class="d-inline-block  ml-lg-5" style="font-size:12px"> Note: Enter Time as multiples of 0.5 </div>
+                                            <p class="hide text-danger" id="TimeError">All time fields are required</p>
+                                            <p class="hide text-danger" id="MultipleError">Time can only be multiples of 0.5</p>
+                                            <p class="hide text-danger" id="IncrementalError">Time should be incremental</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="controlSection">
+                                    <div class="d-inline-block" style="width:450px">
+                                    <div class="headings mb-2">Speaker Name </div> <input type="text" id="speakerName" class="form-control d-block" /> </div>
+                                    <p class="hide text-danger" id="SpeakerError">Speaker Name is required</p>
+                                </div>
+                                <div id="" class=" mt-3">
+                                    <label class="container " style="display: inline-block;width: 155px;"> Hide Timer <input type="checkbox" id="hideTimer"> 
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="container " style="display: inline-block;width: 250px;"> Start Timer Card in Full Screen Mode <input type="checkbox" id="FullScreen">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <!--button-->
+                                    <!-- <button class=" g btn btn-secondary  mr-3 color-black" id="Start"><i class="fas fa-play" style="padding:3px 15px"></i></button>
+                                    <button class="btn btn-secondary r " id="Stop" disabled="disabled"><i class="fas fa-stop" style="padding:3px 15px" ></i></button>-->
+                                
+                                </div>
+                                <span class="hide TIP">Timer In Progress... <i class="fas fa-cog fa-spin"></i></span>
+                            </div>
+                            <div class="float-lg-left d-inline-block w30">
+                                <div class="headings mt-2 text-center">Word of the Day</div>
+                                <div class="relative mt-3">
+                                    <span class="inline-title">Word Of the Day</span>
+                                    <input type="text" class="form-control " id="word" />
+                                </div>
+                                <div class="relative mt-3">
+                                    <span class="inline-title">Meaning</span>
+                                    <input type="text" class="form-control" id="Meaning" />
+                                </div>
+                                <div class="relative mt-3">
+                                    <span class="inline-title">Idiom Of the Day</span>
+                                    <input type="text" class="form-control " id="idiom" />
+                                </div>
+                                <div class="relative mt-3">
+                                    <span class="inline-title">Meaning</span>
+                                    <input type="text" class="form-control" id="idiomMeaning" />
+                                </div>
+                                
+                                <!-- <div class="relative mt-3">
+                                <span class="inline-title">Usage</span>
+                                <textarea class="form-control "></textarea>
+                                </div> -->
+                                <div class="controlSection">
+                                    <label class="container ml-lg-3"> Include WOD & IOD in timer card <input type="checkbox" id="wod"> <input type="checkbox" id="iod">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div class="card mt-3">
+                <div class="">
+                    <div class="float-left d-inline-block colorChange b w60 position-relative">
+                        <div>
+                            &nbsp;
+                            <a href="#" class="float-right Maximize" rel="Maximize" title="Maximize">
+                                <i class="far fa-window-maximize maxMinBtn"></i>
+                            </a>
+                            <a href="#" class="float-right hide Minimize maxMinBtn" rel="Minimize" title="Minimize">
+                                <i class="far fa-times-circle" ></i>
+                            </a>
+                        </div>
+                        <div class="mt-3 mb-3">
+                            <button class="  btn btn-secondary  actionBtn" id="Start">Start</button>
+                            <button class="btn btn-secondary actionBtn hide" id="Stop" disabled="disabled">Stop</button>
+                        </div>
+                        <span class="timerDisplay">00:00</span>
+                        &nbsp;
+                        <div class="wod hide"></div>
+                        <div class="iod hide"></div> 
+                    </div>
+                    <div class="float-left d-inline-block captureSpeak w40">
+                        <table class="table table-striped overlflow-auto">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Speech Type</th>
+                                    <th scope="col">Speaker</th>
+                                    <th scope="col">Time</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tbody"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+
+    <!-- Footer -->
+    <div class="tmFooter"> Developed by { Abhilash Movva 👨‍💻 } & {Vidiya Prasanth P} - All Rights Reserved®  </div> 
+
+    <!-- scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="./script.js" type="text/javascript"></script>
+    
+</body>
+
+</html>
