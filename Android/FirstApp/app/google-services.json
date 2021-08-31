@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "419709946785",
+    "project_id": "acfunmemo",
+    "storage_bucket": "acfunmemo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:419709946785:android:20f03ffebb8a175df719e0",
+        "android_client_info": {
+          "package_name": "com.acgameshyd.oneg"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "419709946785-20rj9torokcmi9b7i9e61h0gmcih3nlg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgB_98iPr2b_kB5D5fEtb28LiFnuQ28LU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "419709946785-20rj9torokcmi9b7i9e61h0gmcih3nlg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
