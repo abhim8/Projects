@@ -1,0 +1,611 @@
+/** Quote style START */
+
+.bm-quote-module {
+   position:relative;
+   background-color: rgba(255,255,255,0.8);
+   padding: 10px
+}
+
+.bm-quote-module blockquote {
+    margin: 20px;
+    border-left:0px;
+    color:#333;
+    font-weight: 700;
+    font-size:24px;
+    word-wrap: break-word;
+}
+
+.bm-quote-module-quotes:before {
+    content: '“';
+    width: 20px;
+    height: 20px;
+    position:absolute;
+    left: 0px;
+    top: -20px;
+    opacity: 1;
+    color:black;
+    font-family: 'Lily Script One', cursive;
+
+}
+
+.bm-quote-module-quotes:after {
+    content: '”';
+    width: 20px;
+    height: 20px;
+    position:absolute;
+    right: 0px;
+    bottom: 0px;
+    opacity: 1;
+    color:black;
+    font-family: 'Lily Script One', cursive;
+}
+
+.bm-quote-module-single .bm-quote-module-quotes:before{
+    content: "‘";
+}
+.bm-quote-module-single .bm-quote-module-quotes:after {
+    content: "’";
+    right: 20px !important;
+}
+.bm-quote-module-small .bm-quote-module-quotes:before,
+.bm-quote-module-small .bm-quote-module-quotes:after {
+    font-size:60px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.bm-quote-module-medium .bm-quote-module-quotes:before,
+.bm-quote-module-medium .bm-quote-module-quotes:after {
+    font-size: 100px;
+    margin-top: 0px;
+    margin-left: 10px;
+}
+
+.bm-quote-module-large .bm-quote-module-quotes:before,
+.bm-quote-module-large .bm-quote-module-quotes:after {
+    font-size:120px;
+    margin-top: 0px;
+    margin-left: 10px;
+}
+
+.bm-quote-module-small .bm-quote-module-quotes:after {
+    bottom: 20px;
+    right: 15px
+}
+
+.bm-quote-module-medium .bm-quote-module-quotes:after {
+    bottom: 45px;
+    right: 30px
+}
+
+.bm-quote-module-large .bm-quote-module-quotes:after {
+    bottom: 60px;
+    right: 40px;
+}
+
+/** Quote style END */
+
+
+/** Social Module START */
+
+.bm-social-module  { margin:5px 0 0 0; padding:0px; list-style:none; }
+.bm-social-module li {
+    display:inline-block;
+    margin:0px;
+    padding:0px;
+    margin-right: 7px;
+    background: no-repeat center;
+    border: 1px solid white;
+}
+
+.bm-social-module li, a { display:inline-block; }
+
+.bm-social-size-sm li, .bm-social-size-sm li a { width:30px; height:30px; }
+.bm-social-size-m li, .bm-social-size-m li a { width:40px; height:40px; }
+.bm-social-size-lg li, .bm-social-size-lg li a { width:50px; height:50px; }
+.bm-social-size-xl li, .bm-social-size-xl li a { width:70px; height:70px; }
+
+.bm-social-instagram {
+  position: relative;
+
+}
+.bm-social-instagram a{position: relative;}
+
+.bm-social-instagram:before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  content: '';
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bm-social-size-sm .bm-social-facebook { background-image: url('../private/images/social/facebook16.png'); }
+.bm-social-size-sm .bm-social-google { background-image: url('../private/images/social/google16.png'); }
+.bm-social-size-sm .bm-social-linkedin { background-image: url('../private/images/social/linkedin16.png'); }
+.bm-social-size-sm .bm-social-tumblr { background-image: url('../private/images/social/tumblr16.png'); }
+.bm-social-size-sm .bm-social-twitter { background-image: url('../private/images/social/twitter16.png'); }
+.bm-social-size-sm .bm-social-youtube { background-image: url('../private/images/social/youtube16.png'); }
+.bm-social-size-sm .bm-social-behance { background-image: url('../private/images/social/behance16.png'); }
+.bm-social-size-sm .bm-social-dribbble { background-image: url('../private/images/social/dribbble16.png'); }
+.bm-social-size-sm .bm-social-email { background-image: url('../private/images/social/email16.png'); }
+.bm-social-size-sm .bm-social-instagram:before { background-image: url('../private/images/social/instagram16.png'); }
+.bm-social-size-sm .bm-social-pinterest { background-image: url('../private/images/social/pinterest16.png'); }
+.bm-social-size-sm .bm-social-soundcloud { background-image: url('../private/images/social/soundcloud16.png'); }
+.bm-social-size-sm .bm-social-stumbleupon { background-image: url('../private/images/social/stumbleupon16.png'); }
+.bm-social-size-sm .bm-social-android { background-image: url('../private/images/social/android16.png'); }
+.bm-social-size-sm .bm-social-ios { background-image: url('../private/images/social/ios16.png'); }
+.bm-social-size-sm .bm-social-microsoft { background-image: url('../private/images/social/microsoft16.png'); }
+.bm-social-size-sm .bm-social-tripadvisor { background-image: url('../private/images/social/tripadvisor16.png'); }
+.bm-social-size-sm .bm-social-yelp { background-image: url('../private/images/social/yelp16.png'); }
+.bm-social-size-sm .bm-social-kik { background-image: url('../private/images/social/kik16.png'); }
+.bm-social-size-sm .bm-social-line { background-image: url('../private/images/social/line16.png'); }
+.bm-social-size-sm .bm-social-fbmessenger { background-image: url('../private/images/social/messanger16.png'); }
+.bm-social-size-sm .bm-social-snapchat { background-image: url('../private/images/social/snapchat16.png'); }
+.bm-social-size-sm .bm-social-wechat { background-image: url('../private/images/social/wechat16.png'); }
+
+.bm-social-size-m .bm-social-facebook { background-image: url('../private/images/social/facebook24.png'); }
+.bm-social-size-m .bm-social-google { background-image: url('../private/images/social/google24.png'); }
+.bm-social-size-m .bm-social-linkedin { background-image: url('../private/images/social/linkedin24.png'); }
+.bm-social-size-m .bm-social-tumblr { background-image: url('../private/images/social/tumblr24.png'); }
+.bm-social-size-m .bm-social-twitter { background-image: url('../private/images/social/twitter24.png'); }
+.bm-social-size-m .bm-social-youtube { background-image: url('../private/images/social/youtube24.png'); }
+.bm-social-size-m .bm-social-behance { background-image: url('../private/images/social/behance24.png'); }
+.bm-social-size-m .bm-social-dribbble { background-image: url('../private/images/social/dribbble24.png'); }
+.bm-social-size-m .bm-social-email { background-image: url('../private/images/social/email24.png'); }
+.bm-social-size-m .bm-social-instagram:before { background-image: url('../private/images/social/instagram24.png'); }
+.bm-social-size-m .bm-social-pinterest { background-image: url('../private/images/social/pinterest24.png'); }
+.bm-social-size-m .bm-social-soundcloud { background-image: url('../private/images/social/soundcloud24.png'); }
+.bm-social-size-m .bm-social-stumbleupon { background-image: url('../private/images/social/stumbleupon24.png'); }
+.bm-social-size-m .bm-social-android { background-image: url('../private/images/social/android24.png'); }
+.bm-social-size-m .bm-social-ios { background-image: url('../private/images/social/ios24.png'); }
+.bm-social-size-m .bm-social-microsoft { background-image: url('../private/images/social/microsoft24.png'); }
+.bm-social-size-m .bm-social-tripadvisor { background-image: url('../private/images/social/tripadvisor24.png'); }
+.bm-social-size-m .bm-social-yelp { background-image: url('../private/images/social/yelp24.png'); }
+.bm-social-size-m .bm-social-kik { background-image: url('../private/images/social/kik24.png'); }
+.bm-social-size-m .bm-social-line { background-image: url('../private/images/social/line24.png'); }
+.bm-social-size-m .bm-social-fbmessenger { background-image: url('../private/images/social/messanger24.png'); }
+.bm-social-size-m .bm-social-snapchat { background-image: url('../private/images/social/snapchat24.png'); }
+.bm-social-size-m .bm-social-wechat { background-image: url('../private/images/social/wechat24.png'); }
+
+.bm-social-size-lg .bm-social-facebook { background-image: url('../private/images/social/facebook32.png'); }
+.bm-social-size-lg .bm-social-google { background-image: url('../private/images/social/google32.png'); }
+.bm-social-size-lg .bm-social-linkedin { background-image: url('../private/images/social/linkedin32.png'); }
+.bm-social-size-lg .bm-social-tumblr { background-image: url('../private/images/social/tumblr32.png'); }
+.bm-social-size-lg .bm-social-twitter { background-image: url('../private/images/social/twitter32.png'); }
+.bm-social-size-lg .bm-social-youtube { background-image: url('../private/images/social/youtube32.png'); }
+.bm-social-size-lg .bm-social-behance { background-image: url('../private/images/social/behance32.png'); }
+.bm-social-size-lg .bm-social-dribbble { background-image: url('../private/images/social/dribbble32.png'); }
+.bm-social-size-lg .bm-social-email { background-image: url('../private/images/social/email32.png'); }
+.bm-social-size-lg .bm-social-instagram:before { background-image: url('../private/images/social/instagram32.png'); }
+.bm-social-size-lg .bm-social-pinterest { background-image: url('../private/images/social/pinterest32.png'); }
+.bm-social-size-lg .bm-social-soundcloud { background-image: url('../private/images/social/soundcloud32.png'); }
+.bm-social-size-lg .bm-social-stumbleupon { background-image: url('../private/images/social/stumbleupon32.png'); }
+.bm-social-size-lg .bm-social-android { background-image: url('../private/images/social/android32.png'); }
+.bm-social-size-lg .bm-social-ios { background-image: url('../private/images/social/ios32.png'); }
+.bm-social-size-lg .bm-social-microsoft { background-image: url('../private/images/social/microsoft32.png'); }
+.bm-social-size-lg .bm-social-tripadvisor { background-image: url('../private/images/social/tripadvisor32.png'); }
+.bm-social-size-lg .bm-social-yelp { background-image: url('../private/images/social/yelp32.png'); }
+.bm-social-size-lg .bm-social-kik { background-image: url('../private/images/social/kik32.png'); }
+.bm-social-size-lg .bm-social-line { background-image: url('../private/images/social/line32.png'); }
+.bm-social-size-lg .bm-social-fbmessenger { background-image: url('../private/images/social/messanger32.png'); }
+.bm-social-size-lg .bm-social-snapchat { background-image: url('../private/images/social/snapchat32.png'); }
+.bm-social-size-lg .bm-social-wechat { background-image: url('../private/images/social/wechat32.png'); }
+
+.bm-social-size-xl .bm-social-facebook { background-image: url('../private/images/social/facebook44.png'); }
+.bm-social-size-xl .bm-social-google { background-image: url('../private/images/social/google44.png'); }
+.bm-social-size-xl .bm-social-linkedin { background-image: url('../private/images/social/linkedin44.png'); }
+.bm-social-size-xl .bm-social-tumblr { background-image: url('../private/images/social/tumblr44.png'); }
+.bm-social-size-xl .bm-social-twitter { background-image: url('../private/images/social/twitter44.png'); }
+.bm-social-size-xl .bm-social-youtube { background-image: url('../private/images/social/youtube44.png'); }
+.bm-social-size-xl .bm-social-behance { background-image: url('../private/images/social/behance44.png'); }
+.bm-social-size-xl .bm-social-dribbble { background-image: url('../private/images/social/dribbble44.png'); }
+.bm-social-size-xl .bm-social-email { background-image: url('../private/images/social/email44.png'); }
+.bm-social-size-xl .bm-social-instagram:before { background-image: url('../private/images/social/instagram44.png'); }
+.bm-social-size-xl .bm-social-pinterest { background-image: url('../private/images/social/pinterest44.png'); }
+.bm-social-size-xl .bm-social-soundcloud { background-image: url('../private/images/social/soundcloud44.png'); }
+.bm-social-size-xl .bm-social-stumbleupon { background-image: url('../private/images/social/stumbleupon44.png'); }
+.bm-social-size-xl .bm-social-android { background-image: url('../private/images/social/android44.png'); }
+.bm-social-size-xl .bm-social-ios { background-image: url('../private/images/social/ios44.png'); }
+.bm-social-size-xl .bm-social-microsoft { background-image: url('../private/images/social/microsoft44.png'); }
+.bm-social-size-xl .bm-social-tripadvisor { background-image: url('../private/images/social/tripadvisor44.png'); }
+.bm-social-size-xl .bm-social-yelp { background-image: url('../private/images/social/yelp44.png'); }
+.bm-social-size-xl .bm-social-kik { background-image: url('../private/images/social/kik44.png'); }
+.bm-social-size-xl .bm-social-line { background-image: url('../private/images/social/line44.png'); }
+.bm-social-size-xl .bm-social-fbmessenger { background-image: url('../private/images/social/messanger44.png'); }
+.bm-social-size-xl .bm-social-snapchat { background-image: url('../private/images/social/snapchat44.png'); }
+.bm-social-size-xl .bm-social-wechat { background-image: url('../private/images/social/wechat44.png'); }
+
+
+.bm-social-black li { background-color: #222; }
+.bm-social-transparent li { background-color:transparent; border:none !important;}
+.bm-social-white li { background-color: #000; -webkit-filter: invert(100%); filter: invert(100%); filter:progid:DXImageTransform.Microsoft.BasicImage(invert='1'); }
+
+
+
+.bm-social-color .bm-social-facebook { background-color: #3b5998; }
+.bm-social-color .bm-social-google { background-color: #dd4b39; }
+.bm-social-color .bm-social-linkedin { background-color: #4875B4; }
+.bm-social-color .bm-social-tumblr { background-color: #2B4964; }
+.bm-social-color .bm-social-twitter { background-color: #33CCFF; }
+.bm-social-color .bm-social-youtube { background-color: #FF3333; }
+.bm-social-color .bm-social-behance { background-color: #426fb6; }
+.bm-social-color .bm-social-dribbble { background-color: #e84c88; }
+.bm-social-color .bm-social-email { background-color: #5ba545; }
+.bm-social-color .bm-social-instagram { background: #f09433; background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 ); }
+.bm-social-color .bm-social-pinterest { background-color: #ca2128; }
+.bm-social-color .bm-social-soundcloud { background-color: #faa21d; }
+.bm-social-color .bm-social-stumbleupon { background-color: #f04e23; }
+.bm-social-color .bm-social-android { background-color: #8bc34a; }
+.bm-social-color .bm-social-ios { background-color: #525252; }
+.bm-social-color .bm-social-microsoft { background-color: #00adef; }
+.bm-social-color .bm-social-tripadvisor { background-color: #3c7e19; }
+.bm-social-color .bm-social-yelp { background-color: #ce2200; }
+.bm-social-color .bm-social-kik { background-color: #84ba33; }
+.bm-social-color .bm-social-line { background-color: #00c300; }
+.bm-social-color .bm-social-fbmessenger { background-color: #0084ff; }
+.bm-social-color .bm-social-snapchat { background-color: #edd000; }
+.bm-social-color .bm-social-wechat { background-color: #56c13d; }
+
+.bm-social-rounded li {
+    border-radius: 5px;
+}
+
+/** Social Module END */
+*[data-module=text] ul {
+  list-style: none;
+  padding: 0;
+}
+*[data-module=text] ul li {
+  padding-left: 38px;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+hr[data-module=breaker] {
+    border: 0px;
+    border-top: 1px solid #eee;
+}
+hr[data-module=breaker].bm-breaker-module-medium {
+    border-top: 3px solid #eee;
+}
+hr[data-module=breaker].bm-breaker-module-large {
+    border-top: 6px solid #eee;
+}
+
+
+*[data-module=contact_form] .form_group {
+  clear:both !important;
+}
+
+.form_group {
+    margin: 5px 0 !important;
+    display: inline-block;
+    width: 100%
+}
+.form_group input[type=submit]{
+    vertical-align: top
+}
+
+.bm-sticky-distancer{
+    left: 0;
+}
+*[data-module=image_gallery], 
+*[data-module=image_slideshow]{
+  margin-bottom: 10px;
+}
+.image-slideshow-title{
+  font-size: 36px;
+  font-weight: 300;
+  font-family: 'Open Sans Condensed';
+  color: white;
+}
+.image-slideshow-description{
+  font-size: 18px;
+  font-weight: 100;
+  font-family: 'Open Sans';
+  color: white;
+}
+
+input[type=submit].form-control{
+    color: #fff;
+    background-color: #919065;
+    box-shadow: 2px 3px 0px #6b6b4b;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 16px;
+    font-size: 14px;
+    line-height: 1.3333333;
+    font-family: 'Open Sans';
+    font-weight: 300;
+    height: inherit;
+    margin-left: 10px
+}
+input[type=submit].form-control:hover,
+input[type=submit].form-control:focus,
+input[type=submit].form-control:active{
+  color: #fff;
+  background-color: #a8a652;
+  box-shadow: 2px 3px 0px #6b6b4b;
+  border:none;
+}
+input[type=email].form-control{
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.33;
+    border-radius: 0;
+}
+
+.bm-er-from-title, .bm-er-to-title{
+    font-weight: 700;
+    font-size: 18px;
+    margin-right: 10px;
+}
+.bm-er-from-value, .bm-er-to-value{
+    font-weight: 100;
+    font-size: 18px;
+    margin-right: 10px;
+}
+.bm-event-registration-cover {
+    width: auto;
+    height: 295px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.bm-event-registration-map-view {
+    width: auto;
+    height: 300px;
+}
+.bm-er-location-title{
+    font-weight: 700;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.bm-er-location-value{
+     font-weight: 100;
+     font-size: 18px;
+     margin-right: 10px;
+}
+*[data-module=google_maps] {
+  width: 100%;
+  height: 400px;
+}
+
+
+/* --- newsletter module ---- */
+
+*[data-module=subscribe_form] input[type=email]{
+  width: 100% !important;
+  line-height: 34px !important;
+  height: auto !important;
+  box-shadow: none !important;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+}
+*[data-module=subscribe_form] input[type=submit]{
+  width: 100% !important;
+  padding: 0 !important;
+  line-height: 45px !important;
+}
+*[data-module=subscribe_form].btn-boxy  input[type=submit]{ border-radius: 3px !important; }
+*[data-module=subscribe_form].btn-rounded  input[type=submit]{ border-radius: 7px !important; }
+*[data-module=subscribe_form].btn-pill  input[type=submit]{ border-radius: 15px !important; }
+a[data-module=image] {max-width: 100%}
+
+@media only screen and (-moz-min-device-pixel-ratio: 1.5), 
+       only screen and (-o-min-device-pixel-ratio: 3/2), 
+       only screen and (-webkit-min-device-pixel-ratio: 1.5), 
+       only screen and (min-devicepixel-ratio: 1.5), 
+       only screen and (min-resolution: 1.5dppx) {
+
+  .bm-social-size-sm .bm-social-facebook { background-image: url('../private/images/social/facebook16@2x.png'); background-size: auto 16px }
+  .bm-social-size-sm .bm-social-google { background-image: url('../private/images/social/google16@2x.png'); background-size: 16px }
+  .bm-social-size-sm .bm-social-linkedin { background-image: url('../private/images/social/linkedin16@2x.png'); background-size: 16px }
+  .bm-social-size-sm .bm-social-tumblr { background-image: url('../private/images/social/tumblr16@2x.png'); background-size: auto 16px }
+  .bm-social-size-sm .bm-social-twitter { background-image: url('../private/images/social/twitter16@2x.png'); background-size: 16px }
+  .bm-social-size-sm .bm-social-youtube { background-image: url('../private/images/social/youtube16@2x.png'); background-size: 16px }
+  .bm-social-size-sm .bm-social-behance { background-image: url('../private/images/social/behance16@2x.png'); background-size: 16px }
+  .bm-social-size-sm .bm-social-dribbble { background-image: url('../private/images/social/dribbble16@2x.png'); background-size: 16px }
+  .bm-social-size-sm .bm-social-email { background-image: url('../private/images/social/email16@2x.png'); background-size: 16px }
+  .bm-social-size-sm .bm-social-instagram { background-image: url('../private/images/social/instagram16@2x.png'); background-size: 16px; background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+ }
+  .bm-social-black.bm-social-size-sm .bm-social-instagram { background:none; background-color: #222; filter: none; }
+  .bm-social-white.bm-social-size-sm .bm-social-instagram { background:none; background-color: black; background-repeat:no-repeat}
+  .bm-social-transparent.bm-social-size-sm .bm-social-instagram { background:none;}
+  .bm-social-size-sm .bm-social-pinterest { background-image: url('../private/images/social/pinterest16@2x.png'); background-size: auto 16px }
+  .bm-social-size-sm .bm-social-soundcloud { background-image: url('../private/images/social/soundcloud16@2x.png'); background-size: 16px }
+  .bm-social-size-sm .bm-social-stumbleupon { background-image: url('../private/images/social/stumbleupon16@2x.png'); background-size: 16px }
+  .bm-social-size-sm .bm-social-android { background-image: url('../private/images/social/android16@2x.png'); background-size: 16px }
+  .bm-social-size-sm .bm-social-ios { background-image: url('../private/images/social/ios16@2x.png'); background-size: 16px }
+  .bm-social-size-sm .bm-social-microsoft { background-image: url('../private/images/social/microsoft16@2x.png'); background-size: 16px }
+  .bm-social-size-sm .bm-social-tripadvisor { background-image: url('../private/images/social/tripadvisor16@2x.png'); background-size: 16px }
+  .bm-social-size-sm .bm-social-yelp { background-image: url('../private/images/social/yelp16@2x.png'); background-size: 16px }
+  .bm-social-size-sm .bm-social-kik { background-image: url('../private/images/social/kik16@2x.png'); background-size: 16px }
+  .bm-social-size-sm .bm-social-line { background-image: url('../private/images/social/line16@2x.png'); background-size: 16px }
+  .bm-social-size-sm .bm-social-fbmessenger { background-image: url('../private/images/social/messanger16@2x.png'); background-size: 16px }
+  .bm-social-size-sm .bm-social-snapchat { background-image: url('../private/images/social/snapchat16@2x.png'); background-size: 16px }
+  .bm-social-size-sm .bm-social-wechat { background-image: url('../private/images/social/wechat16@2x.png'); background-size: 16px }
+
+  .bm-social-size-m .bm-social-facebook { background-image: url('../private/images/social/facebook24@2x.png'); background-size: auto 24px }
+  .bm-social-size-m .bm-social-google { background-image: url('../private/images/social/google24@2x.png'); background-size: 24px }
+  .bm-social-size-m .bm-social-linkedin { background-image: url('../private/images/social/linkedin24@2x.png'); background-size: 24px }
+  .bm-social-size-m .bm-social-tumblr { background-image: url('../private/images/social/tumblr24@2x.png'); background-size: auto 24px }
+  .bm-social-size-m .bm-social-twitter { background-image: url('../private/images/social/twitter24@2x.png'); background-size: 24px }
+  .bm-social-size-m .bm-social-youtube { background-image: url('../private/images/social/youtube24@2x.png'); background-size: 24px }
+  .bm-social-size-m .bm-social-behance { background-image: url('../private/images/social/behance24@2x.png'); background-size: 24px }
+  .bm-social-size-m .bm-social-dribbble { background-image: url('../private/images/social/dribbble24@2x.png'); background-size: 24px }
+  .bm-social-size-m .bm-social-email { background-image: url('../private/images/social/email24@2x.png'); background-size: 24px }
+  .bm-social-size-m .bm-social-instagram { background-image: url('../private/images/social/instagram24@2x.png'); background-size: 24px; background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+ }
+  .bm-social-black.bm-social-size-m .bm-social-instagram { background:none; background-color: #222; filter: none; }
+  .bm-social-white.bm-social-size-m .bm-social-instagram { background:none; background-color: black; background-repeat:no-repeat}
+  .bm-social-transparent.bm-social-size-m .bm-social-instagram { background:none;}
+  .bm-social-size-m .bm-social-pinterest { background-image: url('../private/images/social/pinterest24@2x.png'); background-size: auto 24px }
+  .bm-social-size-m .bm-social-soundcloud { background-image: url('../private/images/social/soundcloud24@2x.png'); background-size: 24px }
+  .bm-social-size-m .bm-social-stumbleupon { background-image: url('../private/images/social/stumbleupon24@2x.png'); background-size: 24px }
+  .bm-social-size-m .bm-social-android { background-image: url('../private/images/social/android24@2x.png'); background-size: 24px }
+  .bm-social-size-m .bm-social-ios { background-image: url('../private/images/social/ios24@2x.png'); background-size: 24px }
+  .bm-social-size-m .bm-social-microsoft { background-image: url('../private/images/social/microsoft24@2x.png'); background-size: 24px }
+  .bm-social-size-m .bm-social-tripadvisor { background-image: url('../private/images/social/tripadvisor24@2x.png'); background-size: 24px }
+  .bm-social-size-m .bm-social-yelp { background-image: url('../private/images/social/yelp24@2x.png'); background-size: 24px }
+  .bm-social-size-m .bm-social-kik { background-image: url('../private/images/social/kik24@2x.png'); background-size: 24px }
+  .bm-social-size-m .bm-social-line { background-image: url('../private/images/social/line24@2x.png'); background-size: 24px }
+  .bm-social-size-m .bm-social-fbmessenger { background-image: url('../private/images/social/messanger24@2x.png'); background-size: 24px }
+  .bm-social-size-m .bm-social-snapchat { background-image: url('../private/images/social/snapchat24@2x.png'); background-size: 24px }
+  .bm-social-size-m .bm-social-wechat { background-image: url('../private/images/social/wechat24@2x.png'); background-size: 24px }
+
+  .bm-social-size-lg .bm-social-facebook { background-image: url('../private/images/social/facebook32@2x.png'); background-size: auto 32px }
+  .bm-social-size-lg .bm-social-google { background-image: url('../private/images/social/google32@2x.png'); background-size: 32px }
+  .bm-social-size-lg .bm-social-linkedin { background-image: url('../private/images/social/linkedin32@2x.png'); background-size: 32px }
+  .bm-social-size-lg .bm-social-tumblr { background-image: url('../private/images/social/tumblr32@2x.png'); background-size: auto 32px }
+  .bm-social-size-lg .bm-social-twitter { background-image: url('../private/images/social/twitter32@2x.png'); background-size: 32px }
+  .bm-social-size-lg .bm-social-youtube { background-image: url('../private/images/social/youtube32@2x.png'); background-size: 32px }
+  .bm-social-size-lg .bm-social-behance { background-image: url('../private/images/social/behance32@2x.png'); background-size: 32px }
+  .bm-social-size-lg .bm-social-dribbble { background-image: url('../private/images/social/dribbble32@2x.png'); background-size: 32px }
+  .bm-social-size-lg .bm-social-email { background-image: url('../private/images/social/email32@2x.png'); background-size: 32px }
+  .bm-social-size-lg .bm-social-instagram { background-image: url('../private/images/social/instagram32@2x.png'); background-size: 32px; background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+ }
+  .bm-social-black.bm-social-size-lg .bm-social-instagram { background:none; background-color: #222; filter: none; }
+  .bm-social-white.bm-social-size-lg .bm-social-instagram { background:none; background-color: black; background-repeat:no-repeat}
+  .bm-social-transparent.bm-social-size-lg .bm-social-instagram { background:none;}
+  .bm-social-size-lg .bm-social-pinterest { background-image: url('../private/images/social/pinterest32@2x.png'); background-size: auto 32px }
+  .bm-social-size-lg .bm-social-soundcloud { background-image: url('../private/images/social/soundcloud32@2x.png'); background-size: 32px }
+  .bm-social-size-lg .bm-social-stumbleupon { background-image: url('../private/images/social/stumbleupon32@2x.png'); background-size: 32px }
+  .bm-social-size-lg .bm-social-android { background-image: url('../private/images/social/android32@2x.png'); background-size: 32px }
+  .bm-social-size-lg .bm-social-ios { background-image: url('../private/images/social/ios32@2x.png'); background-size: 32px }
+  .bm-social-size-lg .bm-social-microsoft { background-image: url('../private/images/social/microsoft32@2x.png'); background-size: 32px }
+  .bm-social-size-lg .bm-social-tripadvisor { background-image: url('../private/images/social/tripadvisor32@2x.png'); background-size: 32px }
+  .bm-social-size-lg .bm-social-yelp { background-image: url('../private/images/social/yelp32@2x.png'); background-size: 32px }
+  .bm-social-size-lg .bm-social-kik { background-image: url('../private/images/social/kik32@2x.png'); background-size: 32px }
+  .bm-social-size-lg .bm-social-line { background-image: url('../private/images/social/line32@2x.png'); background-size: 32px }
+  .bm-social-size-lg .bm-social-fbmessenger { background-image: url('../private/images/social/messanger32@2x.png'); background-size: 32px }
+  .bm-social-size-lg .bm-social-snapchat { background-image: url('../private/images/social/snapchat32@2x.png'); background-size: 32px }
+  .bm-social-size-lg .bm-social-wechat { background-image: url('../private/images/social/wechat32@2x.png'); background-size: 32px }
+
+  .bm-social-size-xl .bm-social-facebook { background-image: url('../private/images/social/facebook44@2x.png'); background-size: auto 44px }
+  .bm-social-size-xl .bm-social-google { background-image: url('../private/images/social/google44@2x.png'); background-size: 44px }
+  .bm-social-size-xl .bm-social-linkedin { background-image: url('../private/images/social/linkedin44@2x.png'); background-size: 44px }
+  .bm-social-size-xl .bm-social-tumblr { background-image: url('../private/images/social/tumblr44@2x.png'); background-size: auto 44px }
+  .bm-social-size-xl .bm-social-twitter { background-image: url('../private/images/social/twitter44@2x.png'); background-size: 44px }
+  .bm-social-size-xl .bm-social-youtube { background-image: url('../private/images/social/youtube44@2x.png'); background-size: 44px }
+  .bm-social-size-xl .bm-social-behance { background-image: url('../private/images/social/behance44@2x.png'); background-size: 44px }
+  .bm-social-size-xl .bm-social-dribbble { background-image: url('../private/images/social/dribbble44@2x.png'); background-size: 44px }
+  .bm-social-size-xl .bm-social-email { background-image: url('../private/images/social/email44@2x.png'); background-size: 44px }
+  .bm-social-size-xl .bm-social-instagram { background-image: url('../private/images/social/instagram44@2x.png'); background-size: 44px; background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+ }
+  .bm-social-black.bm-social-size-xl .bm-social-instagram { background:none; background-color: #222; filter: none; }
+  .bm-social-white.bm-social-size-xl .bm-social-instagram { background:none; background-color: black; background-repeat:no-repeat}
+  .bm-social-transparent.bm-social-size-xl .bm-social-instagram { background:none;}
+  .bm-social-size-xl .bm-social-pinterest { background-image: url('../private/images/social/pinterest44@2x.png'); background-size: auto 44px }
+  .bm-social-size-xl .bm-social-soundcloud { background-image: url('../private/images/social/soundcloud44@2x.png'); background-size: 44px }
+  .bm-social-size-xl .bm-social-stumbleupon { background-image: url('../private/images/social/stumbleupon44@2x.png'); background-size: 44px }
+  .bm-social-size-xl .bm-social-android { background-image: url('../private/images/social/android44@2x.png'); background-size: 44px }
+  .bm-social-size-xl .bm-social-ios { background-image: url('../private/images/social/ios44@2x.png'); background-size: 44px }
+  .bm-social-size-xl .bm-social-microsoft { background-image: url('../private/images/social/microsoft44@2x.png'); background-size: 44px }
+  .bm-social-size-xl .bm-social-tripadvisor { background-image: url('../private/images/social/tripadvisor44@2x.png'); background-size: 44px }
+  .bm-social-size-xl .bm-social-yelp { background-image: url('../private/images/social/yelp44@2x.png'); background-size: 44px }
+  .bm-social-size-xl .bm-social-kik { background-image: url('../private/images/social/kik44@2x.png'); background-size: 44px }
+  .bm-social-size-xl .bm-social-line { background-image: url('../private/images/social/line44@2x.png'); background-size: 44px }
+  .bm-social-size-xl .bm-social-fbmessenger { background-image: url('../private/images/social/messanger44@2x.png'); background-size: 44px }
+  .bm-social-size-xl .bm-social-snapchat { background-image: url('../private/images/social/snapchat44@2x.png'); background-size: 44px }
+  .bm-social-size-xl .bm-social-wechat { background-image: url('../private/images/social/wechat44@2x.png'); background-size: 44px }
+
+}
+*[data-focus=section]{
+    height: 0;
+    overflow: hidden;
+}
+
+#footer *[data-di=logo] {
+    max-width: 300px;
+    max-height: 100px;
+}
+/*.bm-builder-area #sponsored_footer{
+  position: relative;
+  left: 0;
+}
+.bm-builder-area #content{
+  margin-bottom:0 !important;
+}
+.bm-builder-area #sponsored_footer.full{
+  position: fixed;
+  left:250px
+}*/
+#header .navbar-brand.bm-brand-is-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: bold;
+    vertical-align: middle;
+    line-height: 1;
+}
+#header .navbar-brand.bm-brand-is-image{
+    display: inline-block;
+    max-width: 350px;
+    width: auto;
+    height: auto;
+    max-height: 60px;
+    padding: 5px 0;
+    vertical-align: top;
+}
+.bm-builder-area #sponsored_footer{display: none}
+*[data-module="title"], *[data-module="text"]{
+  word-wrap: break-word;
+}
+*[data-module="title"] a, *[data-module="text"] a {
+  word-wrap: break-word;
+  word-break: break-all;
+}
+.dropdown-menu > .active > a, .dropdown-menu > .active > a:focus, .dropdown-menu > .active > a:hover{
+  color: initial;
+  background-color: initial;
+}
+
+/*  BOX Border  */
+.boxBorder{
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  margin: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  float: left;
+}
+.boxBorder.col-md-3{
+  width: calc(25% - 20px);
+}
+.boxBorder.col-md-4{
+  width: calc(33.333333% - 20px);
+}
+.boxBorder.col-md-6{
+  width: calc(50% - 20px);
+}
+.boxBorder.col-md-12{
+  width: 100%;
+}
+@media (max-width: 768px){
+  .boxBorder.col-md-3,
+  .boxBorder.col-md-4,
+  .boxBorder.col-md-6{
+    width: calc(50% - 20px);
+  }
+  .boxBorder.col-md-12{
+    width: 100%;
+  }
+}
+@media (max-width: 500px){
+  .boxBorder.col-md-3,
+  .boxBorder.col-md-4,
+  .boxBorder.col-md-6,
+  .boxBorder.col-md-12{
+    width: 100%;
+  }
+}
+@media (max-width: 978px) {
+   *[data-module="subscribe_form"] input[type="email"]{
+       margin-bottom: 10px
+    }
+}

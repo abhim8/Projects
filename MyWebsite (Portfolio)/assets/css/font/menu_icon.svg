@@ -1,0 +1,37 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+<metadata>
+Created by FontForge 20160405 at Tue Jan  9 05:52:21 2018
+ By www-data
+Copyright (C) 2016 by original authors @ fontello.com
+</metadata>
+<defs>
+<font id="MyFontRegular" horiz-adv-x="472" >
+  <font-face 
+    font-family="My Font"
+    font-weight="500"
+    font-stretch="normal"
+    units-per-em="1000"
+    panose-1="0 0 0 0 0 0 0 0 0 0"
+    ascent="850"
+    descent="-150"
+    bbox="0 0 858 700"
+    underline-thickness="50"
+    underline-position="-100"
+    unicode-range="U+0020-E800"
+  />
+<missing-glyph 
+d="M0 700v-700h432v700h-432zM50 50v600h332v-600h-332z" />
+    <glyph glyph-name=".notdef" 
+d="M0 700v-700h432v700h-432zM50 50v600h332v-600h-332z" />
+    <glyph glyph-name=".notdef" 
+d="M0 700v-700h432v700h-432zM50 50v600h332v-600h-332z" />
+    <glyph glyph-name="space" unicode=" " horiz-adv-x="40" 
+ />
+    <glyph glyph-name="[namenotfound]" unicode="&#xe800;" horiz-adv-x="857" 
+d="M858 77c0 6 -3 12 -10 17c-8 5 -16 8 -26 8h-785c-10 0 -18 -3 -25 -8c-8 -4 -11 -10 -11 -17v-50c0 -6 4 -12 11 -17c6 -5 15 -8 25 -8h785c10 0 19 3 26 8c6 4 10 10 10 17v50zM858 360c0 7 -3 13 -10 18c-8 5 -16 7 -26 7h-785c-10 0 -18 -2 -25 -7
+c-8 -5 -11 -11 -11 -18v-50c0 -7 4 -13 11 -18c6 -5 15 -7 25 -7h785c10 0 19 2 26 7c6 5 10 11 10 18v50zM858 649c0 7 -3 13 -10 18c-8 5 -16 7 -26 7h-785c-10 0 -18 -2 -25 -7c-8 -5 -11 -11 -11 -18v-50c0 -6 4 -12 11 -17c6 -5 15 -8 25 -8h785c10 0 19 3 26 8
+c6 4 10 10 10 17v50z" />
+  </font>
+</defs></svg>
